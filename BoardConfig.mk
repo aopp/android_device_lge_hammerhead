@@ -107,8 +107,9 @@ BOARD_SEPOLICY_DIRS += \
        device/lge/hammerhead/sepolicy
 
 # Define kernel config for inline building
-TARGET_KERNEL_CONFIG := cyanogenmod_hammerhead_defconfig
+TARGET_KERNEL_CONFIG := aopp_hammerhead_defconfig
 TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
+BOARD_KERNEL_CMDLINE := androidboot.selinux=permissive
 
 # The list below is order dependent
 BOARD_SEPOLICY_UNION += \
