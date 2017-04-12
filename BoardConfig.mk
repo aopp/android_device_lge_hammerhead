@@ -103,7 +103,7 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 # Define kernel config for inline building
 TARGET_KERNEL_CONFIG := aopp_hammerhead_defconfig
 TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
-BOARD_KERNEL_CMDLINE := androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 ifneq ($(filter hammerhead_fp aosp_hammerhead_fp,$(TARGET_PRODUCT)),)
 BOARD_HAS_FINGERPRINT_FPC := true
